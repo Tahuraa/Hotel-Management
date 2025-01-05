@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f3f3f3;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.container {
+    display: flex; /* Flexbox container */
+    align-items: flex-start; /* Align children to the top */
+    gap: 20px; /* Space between reservation panel and room list */
+    padding: 20px;
+    max-width: 1200px; /* Center content and limit width */
+    margin: 0 auto; /* Center container horizontally */
+}
+
+header {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+}
+
+header .logo2 {
+    font-size: 0.35cm;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+}
+
+header nav {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+
+
+.reservation-panel {
+    position: fixed;
+    
+    
+    
+    flex: 1; 
+    background: #f01d1d;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 2px solid #9A7B4F;
+    /* max-width: 45%; */
+    /* margin: auto; */
+    z-index: 999;
+}
+
+
+/* Reservation Panel */
+.reservation-panel {
+    position: sticky;
+    top: 80px; /* Adjust based on header height */
+    flex: 1; /* Allow the panel to take up space proportionally */
+    background: #fbfaf8; /* Light green background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    /* border: 2px solid #7CA802; */
+    border: 2px solid #9A7B4F;
+}
+
+
+
+.rooms-list {
+    flex: 2;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 2px solid #ccc;
+    max-width: 65%;
+    margin: auto;
+}
+
+/* Rooms List */
+.rooms-list {
+    flex: 2; /* Take up more space than reservation panel */
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 2px solid #ccc;
+}
+
+.room {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.room img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.room-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.room-details h3 {
+    margin: 0 0 10px 0;
+}
+
+.room-details p {
+    margin: 5px 0;
+}
+
+.room-price {
+    text-align: left;
+}
+
+.room-price span {
+    color: rgb(247, 9, 9);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.btn {
+    background: #9A7B4F;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #907f68;
+}

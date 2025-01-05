@@ -1,0 +1,115 @@
+/* Reset and base styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+header {
+    background-color: #FFFFFF;
+    color: #111439;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+header .logo {
+    text-align: center;
+    flex: 1; /* Center-align the logo */
+    font-family: 'Playfair Display', serif;
+    color: #9A7B4F;
+    margin: 0;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+header .logo h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #888888;
+    font-style: italic;
+    margin: 5px 0 0;
+}
+
+/* Navigation styling */
+header nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+header nav a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10px;
+    position: relative;
+    transition: color 0.3s ease, background 0.3s ease;
+    white-space: nowrap;
+}
+
+header nav a::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: #9A7B4F;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+header nav a:hover {
+    color: #9A7B4F;
+}
+
+header nav a.active {
+    color: #9A7B4F;
+    font-weight: 500;
+}
+
+header nav a.active::after {
+    width: 100%;
+}
+
+/* Rounded button */
+button.check-availability {
+    background-color: #9A7B4F;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.check-availability:hover {
+    background-color: #82663A;
+}
+
+/* Ensure styles do not bleed into other pages */
+header * {
+    box-sizing: border-box;
+}

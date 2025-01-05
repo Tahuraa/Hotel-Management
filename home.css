@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+
+
+header {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+}
+header .logo2 {
+    font-size: 0.35cm;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+}
+
+header nav {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.hero {
+    background: url('hotel-image.jpg') no-repeat center center/cover;
+    height: 800px;
+    position: relative;
+}
+
+
+
+
+
+
+
+/* Booking Form */
+.booking-form {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    right: 50px;
+    top: 0px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.booking-form h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.booking-form input, .booking-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.check-btn {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.check-btn:hover {
+    background-color: #22e670;
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
